@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e6e7fe5fd9d19060838a2fee2857ca4",
+    "content-hash": "cfb024c2f8c5572994ad3cda37684142",
     "packages": [
         {
             "name": "brick/math",
@@ -1801,6 +1801,64 @@
                 }
             ],
             "time": "2023-02-06T13:46:10+00:00"
+        },
+        {
+            "name": "myckhel/laravel-paystack",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-paystack",
+                "reference": "9bbfe4d07efb967affebbe668e3c6c58a61c21f0"
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Myckhel\\Paystack\\PaystackServiceProvider"
+                    ],
+                    "aliases": {
+                        "Paystack": "Myckhel\\Paystack\\Facades\\Paystack"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Myckhel\\Paystack\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Myckhel\\Paystack\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "myckhel",
+                    "email": "myckhel1@hotmail.com"
+                }
+            ],
+            "description": "A description for laravel-paystack.",
+            "keywords": [
+                "laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "nesbot/carbon",
@@ -7823,7 +7881,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "myckhel/laravel-paystack": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
