@@ -14,7 +14,7 @@
         "laravel/sanctum": "^3.2",
         "laravel/telescope": "^4.14",
         "laravel/tinker": "^2.8",
-        "myckhel/laravel-paystack": "dev-main"
+        "binkode/laravel-paystack": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -69,7 +69,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./packages/*",
+            "url": "../laravel-paystack",
             "options": {
                 "symlink": true
             }
